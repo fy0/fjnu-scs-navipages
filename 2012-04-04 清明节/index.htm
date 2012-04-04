@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.tools.min.js"></script>
+		<meta http-equiv="refresh" content="45;url=success">
+		<title>成功在线</title>
+		<style>
+			body {
+				background-color:rgb(1,2,3);
+				color:#233;
+			}
+			#footer {
+				margin:10px;
+				text-align:center;
+			}
+
+			#flv {
+				margin:0 auto;
+				text-align:center;
+				width:760px;
+				height:567px;
+			}
+
+			#enter {
+				color:red;
+				margin:10px;
+			}
+
+			#about {
+				color:skyblue;
+				margin:10px;
+                display:none;
+			}
+
+			#box {
+				display:none;
+			}
+
+            #topbox {
+                color:white;
+                display:none;
+                background-color:#333;
+                border:1px solid white;
+                display:none;
+                position:absolute;
+                border-radius: 6px;
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box">
+            <div id="flv">
+                <object id="swf"type="application/x-shockwave-flash" data="navi_qm.swf" width="760" height="567">
+                    <param name="movie" value="navi_qm.swf" />
+                    <param name="wmode" value="transparent" />
+                </object>
+
+            </div>
+
+            <div id="footer">
+                <a id="enter" href="/success/">进入首页</a>
+                <a href="#" id="about" rel="#topbox">关于这张页面</a><br />
+                <span style='color:gray'>Powered by </span>
+                <strong><a href="http://mcs.fjnu.edu.cn/success" target="_blank">成功在线技术部</a></strong>
+
+                <span style='color:gray'>&nbsp; &copy; 2002-2012</span>
+            </div>
+            <div id="topbox">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这张页面的flash是成功在线技术部一些新接触<br />
+                网站的同学的试水之作。风格清新不用着墨，出乎意<br />
+                料亦不需多言。反正怎么看都是秒杀编辑部那帮美工<br />
+                方面的专业酱油人员的作品。这里就不将作者名字一<br />
+                一列出了。而这山寨风格的暗色背景页，则是在下拙<br />
+                作。知名不具。不知名亦不具。<br />
+                清明好时节，勿忘祭先祖。<br />
+                <br />
+                写于2012.4.2日
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $('#box').fadeIn(2000,function(){$('#about').show(1000);});
+                $('#about[rel]').overlay({mask: '#000',top:'center',});
+            });
+        </script>
+    </body>
+</html>
